@@ -5,13 +5,12 @@
  * By Peshou, votre cher et tendre
  */
 
-
-
 var comments = [];
 var comment;
 var message;
 var pseudo;
 
+// Edit this Regex to change the user to block.
 var user = /rainbowknight/i;
 
 var rkMessages = [];
@@ -42,10 +41,15 @@ function main()
 					pseudo = pseudo[0];
 					if (pseudo.href.match(user) != null)
 					{
-						console.log(comments[i]);
+						rkMessages.push(comment);
 					}
 				}
 			}
 		}
+	}
+
+	for (i = 0 ; i < rkMessages.length ; i++)
+	{
+		rkMessages[i].parentNode.removeChild(rkMessages[i]);
 	}
 }
