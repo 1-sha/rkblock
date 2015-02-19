@@ -3,7 +3,7 @@
 
   "name": "RkBlock",
   "description": "Block RK on mlpfictions.com/",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "icons": {  "24": "image/icon24.png",
               "32": "image/icon32.png",
